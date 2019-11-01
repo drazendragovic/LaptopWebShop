@@ -1,0 +1,10 @@
+<%
+    session.removeAttribute("user");
+    session.removeAttribute("msg");
+    session.removeAttribute("msg2");
+    session.removeAttribute("payement");
+    session.removeAttribute("allorders");
+    session.removeAttribute("cart");
+    session.invalidate();
+    response.sendRedirect("home");
+%>
